@@ -1,0 +1,31 @@
+import mysql.connector
+import yfinance as yf
+
+mydb = mysql.connector.connect(
+  host="localhost",
+  user="root",
+  password="Saitanujk1234",
+  database="Cyan"
+)
+
+mycursor = mydb.cursor()
+start_date = '1980-01-01'
+end_date = '2023-02-26'
+
+data = yf.download('AAPL', start=start_date, end=end_date)
+for index, row in data.iterrows():
+    date = index.strftime('%Y-%m-%d')
+    symbol = 'AAPL'
+    open_price = row['Open']
+    high_price = row['High']
+    low_price = row['Low']
+    close_price = row['Close']
+    adj_close_price = row['Adj Close']
+    
+    sql = "INSERT INTO stock (date, symbol, open, high, low, close, adj_close) VALUES (%s, %s, %s, %s, %s, %s, %s)"
+    val = (date, symbol, open_price, high_price, low_price, close_price, adj_close_price)
+    
+    mycursor.execute(sql, val)
+
+mydb.commit()
+mydb.close()
