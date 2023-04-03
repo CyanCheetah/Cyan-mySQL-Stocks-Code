@@ -36,6 +36,54 @@ What the StockInput code does is it:
 + Adds it into the mySQL database in a table called **stock**
 ***FYI: If you are using this code, then remember to change the mySQL information***
 
+### Stock Visualization
+
+[Stock Visual](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/Visual2)
+
+What Stock Visualization does is instead of adding to the mySQL database, it just requests the data from Yahoo Finance and outputs a graph and table. The graph it outputs is the PandasDB chart from above:
+
+![hj](https://user-images.githubusercontent.com/91763642/229375243-851005c2-94fb-4e4f-b057-688c0c1d84ec.png)
+
+The output of the table is:
+
+```
+
+[*********************100%***********************]  1 of 1 completed
+                                 Open        High         Low       Close  \
+Datetime                                                                    
+2023-03-31 09:30:00-04:00  162.440002  162.550003  161.910004  162.520004   
+2023-03-31 09:31:00-04:00  162.520004  162.600006  162.380005  162.410004   
+2023-03-31 09:32:00-04:00  162.410004  162.500000  162.210007  162.490005   
+2023-03-31 09:33:00-04:00  162.500000  162.764999  162.470001  162.690002   
+2023-03-31 09:34:00-04:00  162.699997  163.029999  162.699997  163.020004   
+...                               ...         ...         ...         ...   
+2023-03-31 15:55:00-04:00  164.660004  165.000000  164.660004  164.919998   
+2023-03-31 15:56:00-04:00  164.919998  164.970001  164.860001  164.934998   
+2023-03-31 15:57:00-04:00  164.940002  164.940002  164.809998  164.889999   
+2023-03-31 15:58:00-04:00  164.889999  164.970001  164.809998  164.940002   
+2023-03-31 15:59:00-04:00  164.940002  165.000000  164.699997  164.839996   
+
+                            Adj Close   Volume  
+Datetime                                        
+2023-03-31 09:30:00-04:00  162.520004  1514404  
+2023-03-31 09:31:00-04:00  162.410004   207438  
+2023-03-31 09:32:00-04:00  162.490005   199147  
+2023-03-31 09:33:00-04:00  162.690002   260253  
+2023-03-31 09:34:00-04:00  163.020004   395121  
+...                               ...      ...  
+2023-03-31 15:55:00-04:00  164.919998  1047744  
+2023-03-31 15:56:00-04:00  164.934998   662830  
+2023-03-31 15:57:00-04:00  164.889999   618646  
+2023-03-31 15:58:00-04:00  164.940002   895679  
+2023-03-31 15:59:00-04:00  164.839996  2330398  
+
+[390 rows x 6 columns]
+
+```
+
+# Installation Guide Step-By-Step
+
+
 ```python
 
 mydb = mysql.connector.connect(
@@ -49,4 +97,4 @@ mydb = mysql.connector.connect(
 
 In this code, remember host is the localhost if you are hosting the mySQL database on your computer, user is usually root if you did not change it. Enter your password and the name of the database that you are making changes to.
 
-# Installation Guide Step-By-Step
+
