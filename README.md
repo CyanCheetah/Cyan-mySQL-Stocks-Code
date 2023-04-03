@@ -1,13 +1,13 @@
 # MySQL-Stock-Code
 
-#Introduction
-##This is the repository for some sample mySQL Yahoo Finance code done using Jupyter on Visual Studio Code. 
+# Introduction
+## This is the repository for some sample mySQL Yahoo Finance code done using Jupyter on Visual Studio Code. 
 
 What I aim to achieve is pull finance API data from Yahoo Finance and visualize the data. I use PandasDB as a visualization tool and am quite lucky that Yahoo Finance is already in Pandas format so no need to convert data. 
 
 I also put the data in a mySQL database so that we can build a database so that we do not have to rely on Yahoo Finance for historical data (Though Realtime data still using Yahoo Finance).
 
-#Images
+# Images
 
 This here is an image of AAPL stock from 1980-2023. Here, however, we are not using PandasDB but rather the data that twas inserted into the mySQL database and table is being visualized using a software called PopSQL. 
 ![image](https://user-images.githubusercontent.com/91763642/229315342-aa08b438-8294-4a0b-b912-09e0f8444397.png)
@@ -22,9 +22,9 @@ Here is a graph that was done using some code I will talk in a later section. Th
 ![hj](https://user-images.githubusercontent.com/91763642/229375243-851005c2-94fb-4e4f-b057-688c0c1d84ec.png)
 
 
-#The Code
+# The Code
 
-###Stock Input
+### Stock Input
 
 [StockInput](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/StockInput.ipynb)
 
@@ -45,4 +45,4 @@ What the StockInput code does is it:
 
 In this code, remember host is the localhost if you are hosting the mySQL database on your computer, user is usually root if you did not change it. Enter your password and the name of the database that you are making changes to.
 
-#Installation Guide Step-By-Step
+# Installation Guide Step-By-Step
