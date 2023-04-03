@@ -1,4 +1,14 @@
-# MySQL-Stock-Code
+# Table of Contents
+
+
+* [Introduction](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/README.md#introduction)
+
+* [Images](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/README.md#images)
+
+* [The Code](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/README.md#the-code)
+
+* [Installation Guide Step-By-Step](https://github.com/CyanCheetah/Cyan-mySQL-Stocks-Code/blob/main/README.md#installation-guide-step-by-step)
+
 
 # Introduction
 
