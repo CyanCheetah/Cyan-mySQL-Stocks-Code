@@ -27,10 +27,8 @@ PopSQL is quite handy as it not only allows me to change mySQL database info qui
 
 
 This image shows the AAPL historical stock data inside the mySQL database. It shows the amount of bytes and amount of data inside the database as well.
-![info](https://user-images.githubusercontent.com/91763642/229315896-b0a52fa1-3aee-4625-8e26-972a7b5e183c.png)
 
-Here is a graph that was done using some code I will talk in a later section. This code outputs a graph of some stocks that you input. This is being done by PandasDB
-![hj](https://user-images.githubusercontent.com/91763642/229375243-851005c2-94fb-4e4f-b057-688c0c1d84ec.png)
+![info](https://user-images.githubusercontent.com/91763642/229315896-b0a52fa1-3aee-4625-8e26-972a7b5e183c.png)
 
 
 # The Code
