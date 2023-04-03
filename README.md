@@ -1,7 +1,8 @@
 # MySQL-Stock-Code
 
 # Introduction
-## This is the repository for some sample mySQL Yahoo Finance code done using Jupyter on Visual Studio Code. 
+
+### This is the repository for some sample mySQL Yahoo Finance code done using Jupyter on Visual Studio Code. 
 
 What I aim to achieve is pull finance API data from Yahoo Finance and visualize the data. I use PandasDB as a visualization tool and am quite lucky that Yahoo Finance is already in Pandas format so no need to convert data. 
 
