@@ -30,13 +30,13 @@ Here is a graph that was done using some code I will talk in a later section. Th
 
 What the StockInput code does is it:
 - Asks for a ticker Symbol
-+ For example: AAPL, GOOG, M, TM (Apple, Google, Microsoft, Toyota Motor Corp.)
+  + For example: AAPL, GOOG, M, TM (Apple, Google, Microsoft, Toyota Motor Corp.)
 + Asks for a start and end date
-+ For example: 1980-09-08 & 2023-04-03 (September 8th 1980 to April 3rd 2023)
+  + For example: 1980-09-08 & 2023-04-03 (September 8th 1980 to April 3rd 2023)
 + Adds it into the mySQL database in a table called **stock**
-+ ***FYI: If you are using this code, then remember to change the mySQL information***
+***FYI: If you are using this code, then remember to change the mySQL information***
 
-'''python
+```python
 
 mydb = mysql.connector.connect(
   host="localhost",
@@ -45,7 +45,7 @@ mydb = mysql.connector.connect(
   database="Cyan"
 )
 
-'''
+```
 
 In this code, remember host is the localhost if you are hosting the mySQL database on your computer, user is usually root if you did not change it. Enter your password and the name of the database that you are making changes to.
 
